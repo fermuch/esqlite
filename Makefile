@@ -4,6 +4,16 @@ DIALYZER = dialyzer
 REBAR := $(shell which rebar 2>/dev/null || echo ./rebar)
 REBAR_URL := https://github.com/downloads/basho/rebar/rebar
 
+
+LDFLAGS ?= -fPIC -shared -pedantic
+
+CFLAGS ?= -fPIC -O2
+SQLITE_CFLAGS = -DSQLITE_THREADSAFE=1 -DSQLITE_USE_URI -DSQLITE_ENABLE_FTS3 \
+	-DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_FTS5 -DSQLITE_ENABLE_JSON1 \
+	-DSQLITE_ENABLE_RTREE
+
+CFLAGS += $(SQLITE_CFLAGS) -fPIC -Ic_src/sqlite3
+
 all: compile
 
 ./rebar:
