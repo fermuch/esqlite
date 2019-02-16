@@ -64,6 +64,11 @@ simple_query_test() ->
 
     ok.
 
+json_query_test() ->
+    {ok, Db} = esqlite3:open(":memory:"),
+    ok = esqlite3:exec("select json_extract(json('{\"foo\": 3}'), '$.foo');", Db),
+    ok.
+
 prepare_test() ->
     {ok, Db} = esqlite3:open(":memory:"),
     esqlite3:exec("begin;", Db),
