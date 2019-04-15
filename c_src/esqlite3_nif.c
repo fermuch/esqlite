@@ -22,7 +22,7 @@
 #include <string.h>
 #include <stdio.h>
 
-#include "sqlite3.h"
+#include "sqlite3/sqlite3.h"
 #include "queue.h"
 
 #define MAX_ATOM_LENGTH 255 /* from atom.h, not exposed in erlang include */

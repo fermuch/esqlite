@@ -1,0 +1,14 @@
+[
+{ "file"      : "c_src/sqlite3/sqlite3.c"
+, "directory" : "/home/fermuch/Documentos/Dev/Git/esqlite"
+, "command"   : "cc -c -std=c11 -DSQLITE_THREADSAFE=1 -DSQLITE_USE_URI -DSQLITE_ENABLE_EXPLAIN_COMMENTS -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_JSON1 -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS5 -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_DBSTAT_VTAB -DSQLITE_ENABLE_RBU -g -Wall -fPIC -MMD -I\"/home/fermuch/.asdf/installs/erlang/21.2/lib/erl_interface-3.10.4/include\" -I\"/home/fermuch/.asdf/installs/erlang/21.2/erts-10.2/include\" c_src/sqlite3/sqlite3.c -o c_src/sqlite3/sqlite3.o"
+},
+{ "file"      : "c_src/queue.c"
+, "directory" : "/home/fermuch/Documentos/Dev/Git/esqlite"
+, "command"   : "cc -c -std=c11 -DSQLITE_THREADSAFE=1 -DSQLITE_USE_URI -DSQLITE_ENABLE_EXPLAIN_COMMENTS -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_JSON1 -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS5 -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_DBSTAT_VTAB -DSQLITE_ENABLE_RBU -g -Wall -fPIC -MMD -I\"/home/fermuch/.asdf/installs/erlang/21.2/lib/erl_interface-3.10.4/include\" -I\"/home/fermuch/.asdf/installs/erlang/21.2/erts-10.2/include\" c_src/queue.c -o c_src/queue.o"
+},
+{ "file"      : "c_src/esqlite3_nif.c"
+, "directory" : "/home/fermuch/Documentos/Dev/Git/esqlite"
+, "command"   : "cc -c -std=c11 -DSQLITE_THREADSAFE=1 -DSQLITE_USE_URI -DSQLITE_ENABLE_EXPLAIN_COMMENTS -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_JSON1 -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS5 -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_DBSTAT_VTAB -DSQLITE_ENABLE_RBU -g -Wall -fPIC -MMD -I\"/home/fermuch/.asdf/installs/erlang/21.2/lib/erl_interface-3.10.4/include\" -I\"/home/fermuch/.asdf/installs/erlang/21.2/erts-10.2/include\" c_src/esqlite3_nif.c -o c_src/esqlite3_nif.o"
+}
+]
